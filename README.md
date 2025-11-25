@@ -22,7 +22,7 @@ Actualmente estoy profundizando en el diseño de bases de datos relacionales, ap
 
 | Módulo | Estado |
 |--------|--------|
-| Fundamentos y Configuración | En Desarrollo |
+| Fundamentos y Configuración | Completado |
 | Modelado y Diseño de Datos | Próximamente |
 | Consultas SQL Fundamentales (DDL/DML) | Próximamente |
 | Consultas SQL Avanzadas (Agregación, Joins, Subconsultas) | Próximamente |
@@ -32,11 +32,11 @@ Actualmente estoy profundizando en el diseño de bases de datos relacionales, ap
 ## Contenidos del Curso
 
 ### Módulo 1: Fundamentos y Configuración (Clase 1)
-- [ ] ¿Qué es una BD? y ¿Dónde están?
-- [ ] SGBD más conocidos y Servidores de BD
-- [ ] Instalación y Configuración de XAMPP Server
-- [ ] Introducción a PHPMyAdmin
-- [ ] ¿Cómo crear una Base de Datos?
+- [x] ¿Qué es una BD? y ¿Dónde están?
+- [x] SGBD más conocidos y Servidores de BD
+- [x] Instalación y Configuración de XAMPP Server
+- [x] Introducción a PHPMyAdmin
+- [x] ¿Cómo crear una Base de Datos?
 
 ### Módulo 2: Modelado y Diseño de Datos (Clase 2)
 - [ ] Abstracción y Modelo de Datos
