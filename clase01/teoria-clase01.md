@@ -192,3 +192,7 @@ Cuando termines la clase o de programar, apaga los servicios para liberar memori
 ```bash
 sudo /opt/lampp/lampp stop
 ```
+
+**Ejemplo de la creación de una tabla en phpmyadmin**
+
+![alt text](ejemplo.png)
