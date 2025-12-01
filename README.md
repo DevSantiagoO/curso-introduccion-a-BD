@@ -39,16 +39,16 @@ Actualmente estoy profundizando en el diseño de bases de datos relacionales, ap
 - [x] ¿Cómo crear una Base de Datos?
 
 ### Módulo 2: Modelado y Diseño de Datos (Clase 2)
-- [ ] Abstracción y Modelo de Datos
-- [ ] MER (Modelo Entidad Relacional)
-- [ ] Confección de un DER (Diagrama Entidad-Relación)
-- [ ] Tipos de datos en SQL
-- [ ] Relaciones entre entidades (1:N, N:M)
-- [ ] **Primary Keys** y **Foreign Keys**
-- [ ] Ejercicios Prácticos de Modelado
+- [x] Abstracción y Modelo de Datos
+- [x] MER (Modelo Entidad Relacional)
+- [x] Confección de un DER (Diagrama Entidad-Relación)
+- [x] Tipos de datos en SQL
+- [x] Relaciones entre entidades (1:N, N:M)
+- [x] **Primary Keys** y **Foreign Keys**
+- [x] Ejercicios Prácticos de Modelado
 
 ### Módulo 3: Consultas SQL Fundamentales (Clase 3)
-- [ ] Introducción a SQL (Structured Query Language)
+- [x] Introducción a SQL (Structured Query Language)
 - [ ] **Consultas DDL** (Definición de Datos): `CREATE`, `ALTER`, `DROP`
 - [ ] **Consultas DML** (Manipulación de Datos - CRUD)
 - [ ] `INSERT` y `INSERT MÚLTIPLE`
