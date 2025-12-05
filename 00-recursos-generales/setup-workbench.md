@@ -133,3 +133,52 @@ La forma más común para desarrollo y administración.
 | **Trabajar con BD** | MySQL Workbench | Conectar y escribir SQL | Diseño y Consulta de Datos |
 | **Detener el Servidor** | Terminal (Systemd) | `sudo systemctl stop mysql` | **Cierra el Puerto 3306** |
 | **Verificar Estado** | Terminal (Systemd) | `sudo systemctl status mysql` | Muestra si está `active (running)` |
+
+## 5. Configuración de Apariencia de MySQL Workbench (Tema Claro)
+MySQL Workbench en entornos Linux (Ubuntu) a menudo utiliza el tema GTK del sistema. Si tu sistema operativo usa un tema oscuro por defecto, Workbench también lo usará. Para forzar un tema claro (blanco) dentro de la aplicación, generalmente necesitas modificar la configuración de la aplicación o del entorno de escritorio.
+
+La solución más fiable y directa implica editar el archivo de configuración del lanzador de la aplicación (`.desktop`) para que use un tema claro específico solo para Workbench.
+
+### 5.1. Identificar y Abrir el Archivo de Configuración
+Usaremos el comando sudo nano para editar el archivo de entrada de escritorio que lanza MySQL Workbench.
+
+Encontrar la ubicación del archivo .desktop: El archivo que define cómo se lanza la aplicación se encuentra comúnmente en directorios de aplicaciones. Utiliza sudo nano para abrirlo:
+
+```Bash
+    sudo nano /usr/share/applications/mysql-workbench.desktop
+```
+*(Si usaste una instalación Snap, la ruta podría ser /var/lib/snapd/desktop/applications/mysql-workbench-community_mysql-workbench-community.desktop).*
+
+Modificar la línea de Ejecución (Exec): Busca la línea que comienza con *Exec=*. Esta línea especifica el comando que se ejecuta al hacer clic en el ícono de Workbench.
+
+**Línea Original (Ejemplo):**
+
+```Bash
+Exec=/usr/bin/mysql-workbench %f
+```
+
+Línea Modificada (Añadir Tema Claro): Agrega *env GTK_THEME=Adwaita:light* antes del comando de ejecución. Esto le dice a la aplicación que use el tema GTK 'Adwaita' en su variante clara (light), forzando una interfaz blanca.
+
+```Bash
+Exec=env GTK_THEME=Adwaita:light /usr/bin/mysql-workbench %f
+```
+
+### 5.2. Guardar y Aplicar los Cambios
+Guardar el archivo: Dentro del editor nano, presiona las teclas Ctrl + O (Escribir Salida) y luego Enter para confirmar el nombre del archivo.
+
+Salir de nano: Presiona Ctrl + X para salir del editor.
+
+### 5.3. Verificar y Aplicar Cambios
+Reiniciar la Aplicación: Cierra completamente MySQL Workbench si estaba abierto.
+
+Iniciar Workbench: Vuelve a iniciar MySQL Workbench desde el lanzador de aplicaciones. Ahora debería abrirse con la interfaz principal de color blanco/claro.
+
+## Solución Alternativa (Si la Principal Falla)
+Si la solución anterior no funciona (especialmente con ciertas instalaciones de Snap o temas de escritorio muy personalizados), la única opción es modificar el archivo de configuración de opciones de Workbench.
+
+Localiza el archivo de opciones: El archivo se encuentra típicamente en la carpeta de configuración oculta de tu usuario:
+
+``` Bash
+~/.mysql/workbench/wb_options.xml
+```
+Edita el archivo y busca Gtk/ApplicationTheme: Abre este archivo con un editor de texto (como nano o gedit) y busca la clave que controla el tema de la aplicación. Puede que necesites cambiar el valor de Gtk/ApplicationTheme de un valor oscuro a uno claro.
