@@ -1,4 +1,4 @@
-# Clase 02: Transición de Modelos: Del Diseño Conceptual a la Implementación Lógica
+# Transición de Modelos: Del Diseño Conceptual a la Implementación Lógica
 
 La diferencia entre el Modelo E/R y el Modelo Relacional no es solo gráfica, sino **estructural**. La clave está en cómo se resuelven las relaciones y cómo el mundo real se "aplana" en tablas, un proceso conocido como **Mapeo Relacional**.
 

@@ -1,4 +1,4 @@
-# Clase 02: Modelado y Diseño de Datos
+# Modelado y Diseño de Datos
 
 ## La Fase Conceptual: Abstracción y Modelado
 

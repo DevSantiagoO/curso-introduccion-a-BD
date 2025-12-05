@@ -133,4 +133,3 @@ La forma más común para desarrollo y administración.
 | **Trabajar con BD** | MySQL Workbench | Conectar y escribir SQL | Diseño y Consulta de Datos |
 | **Detener el Servidor** | Terminal (Systemd) | `sudo systemctl stop mysql` | **Cierra el Puerto 3306** |
 | **Verificar Estado** | Terminal (Systemd) | `sudo systemctl status mysql` | Muestra si está `active (running)` |
-
