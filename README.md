@@ -29,6 +29,12 @@ El objetivo es documentar mi progreso: desde la teoría fundamental y el modelad
 - **Control de Versiones:** Git + GitHub (código del curso).
 - **Paradigma:** Modelo Relacional.
 
+### Nuevo Enfoque de Estudio (Lectura y Profundización)
+
+He agregado la carpeta **`resumenes-de-teoria-uni`** con el objetivo de **aprender no solo de videos, sino también de lectura e investigación**.
+
+Esta carpeta contiene archivos Markdown con **resúmenes personales y consolidados** de los PDFs de teoría brindados por la carrera de Tecnicatura Universitaria en Programación (Base de datos I).
+
 # Autor del repo
 
 **Santiago Oliva — DevSantiagoO**  
